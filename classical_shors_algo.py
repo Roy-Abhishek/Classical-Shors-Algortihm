@@ -3,9 +3,19 @@ from greatest_common_divisor import greatest_common_divisor
 import time
 import decimal
 
-decimal.getcontext().prec = 10000
+decimal.getcontext().prec = 100000
 
 def classical_shors_algo(n_bits, number_to_factor, guess):
+    if guess ** 2 == number_to_factor:
+        with open("database.txt", "a") as file:
+            # Write the new data to the file
+            file.write(str([guess, guess]) + "\n")
+
+            file.close()
+        
+        return
+
+
     measurement = quantum_part_of_shors_algo(n_bits, number_to_factor, guess)
 
     j = 1

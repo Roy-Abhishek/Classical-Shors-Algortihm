@@ -34,6 +34,9 @@ def shors_algo(number_to_factor):
     return return_list
 
 
+
+
+
 if __name__=="__main__":
     number_to_factor = int(input("Number to factor: "))
     print()
