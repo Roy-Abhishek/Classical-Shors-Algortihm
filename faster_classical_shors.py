@@ -2,8 +2,9 @@ from faster_quantum_part import faster_quantum_part
 from greatest_common_divisor import greatest_common_divisor
 import time
 import decimal
+from decimal import MAX_PREC
 
-decimal.getcontext().prec = 1000000000000000000
+decimal.getcontext().prec = MAX_PREC
 
 def faster_classical_shors_algo(n_bits, number_to_factor, guess):
     if guess ** 2 == number_to_factor:
