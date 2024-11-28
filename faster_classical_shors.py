@@ -3,7 +3,7 @@ from greatest_common_divisor import greatest_common_divisor
 import time
 import decimal
 
-decimal.getcontext().prec = 1000000000
+decimal.getcontext().prec = 1000000000000000000
 
 def faster_classical_shors_algo(n_bits, number_to_factor, guess):
     if guess ** 2 == number_to_factor:
