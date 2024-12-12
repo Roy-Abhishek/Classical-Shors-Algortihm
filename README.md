@@ -9,4 +9,6 @@ git clone https://github.com/Roy-Abhishek/Classical-Shors-Algortihm.git
 pip3 install -r requirements.txt
 
 python3 main.py
+// OR
+python3 faster_main.py
 ```
